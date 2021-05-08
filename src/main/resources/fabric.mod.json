@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "map_printer",
+  "version": "${version}",
+  "name": "Map Printer",
+  "description": "Save maps to a png file from inside the game",
+  "authors": [
+    "Jrm_Wrm"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/map_printer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [],
+    "client": [
+      "me.jrm_wrm.map_printer.MapPrinterClient"
+    ],
+    "server": []
+  },
+  "mixins": [],
+  "depends": {
+    "minecraft": ">=1.16",
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "fabric-key-binding-api-v1": "*"
+  }
+}
