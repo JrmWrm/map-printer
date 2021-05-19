@@ -14,6 +14,7 @@ import net.minecraft.item.FilledMapItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.map.MapState;
+import net.minecraft.text.Text;
 
 public class MapSerializer {
 
@@ -80,7 +81,7 @@ public class MapSerializer {
         }
 
         // notify the player
-        client.player.sendChatMessage("Map saved to: " + imageDirectory);
+        client.player.sendMessage(Text.of("Map saved to: " + imageDirectory), false);
 
         return true;
     }
